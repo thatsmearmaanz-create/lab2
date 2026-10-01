@@ -1,1 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.bio-hero {
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.bio-hero p {
+    margin-top: 10px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 10px #aaa;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+        margin-bottom: 0;
+    }
+}
